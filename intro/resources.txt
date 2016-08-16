@@ -2,4 +2,4 @@
 2. Javascript patterns - Stefan Stoyanov
 3. https://developer.mozilla.org/pl/docs/Web/JavaScript
 4. https://github.com/rwaldron/idiomatic.js/ - style guide
-5. http://wiki.ecmascript.org/doku.php?id=harmony:proposals
+5. http://wiki.ecmascript.org/doku.php?id=harmony:proposals 
