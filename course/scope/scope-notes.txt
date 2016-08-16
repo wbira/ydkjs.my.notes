@@ -1,0 +1,15 @@
+Scope => where to look for things
+
+Javascript is compiled (every single time when it's run)
+    http://creativejs.com/2013/06/the-race-for-speed-part-2-how-javascript-compilers-work/
+    https://developers.google.com/v8/intro
+    JIT
+    Complier find declaration, and putting to apropiete scope.
+
+    JavaScript engine perform smany of the same steps (like in traditional compiler)
+    1. Tokenizig/lexing
+    2. Parsing => stream of tokens is converted to tree of nested elements called Abstract Syntax tree
+    3. Code-generation => process of taking an AST and turning it into executable code.
+
+JavaScript has function scope only*
+
