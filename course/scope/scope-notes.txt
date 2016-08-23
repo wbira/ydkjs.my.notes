@@ -11,5 +11,7 @@ Javascript is compiled (every single time when it's run)
     2. Parsing => stream of tokens is converted to tree of nested elements called Abstract Syntax tree
     3. Code-generation => process of taking an AST and turning it into executable code.
 
-JavaScript has function scope only*
+Javascript has lexical and dynamic scope
+    There is no bridge between these two types of scopes
+    TODO// more about differences
 
