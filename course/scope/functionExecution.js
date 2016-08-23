@@ -53,7 +53,8 @@ E:"Hey global scope, do you know something about bam?
 S:"No, but I will create global variable bam for you (THIS IS BAD)
 
 DIFF between LHS and RHS
-1. RHS => if engine will perform RHS lookup e.g variable b, and it will fails (including global and all nested scopes) engine will throw REFERENCE ERROR
+1. RHS => if engine will perform RHS lookup e.g variable b, and it will fails (including global and all nested scopes) 
+engine will throw REFERENCE ERROR
 2. LHS => if LHS lookup fails there are two cases:
     a.) program is running in non strict mode => global scope will create new variable of the name
     b.) program is running in strict mode => engine will trhow REFERENCE ERROR like in RHS
