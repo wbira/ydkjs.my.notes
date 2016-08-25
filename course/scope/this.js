@@ -31,7 +31,7 @@ function foo (){
 }
 
 var bar = "bar1";
-foo()
+foo();
 
 //IIFE
 
@@ -48,8 +48,7 @@ an executuion context for our funstion
 
 */
 
-function foo (){
-    'use strict'
+function foo () {
     console.log(this.bar);
 }
 
@@ -58,3 +57,22 @@ var o2 = { bar : "bar3", foo: foo }
 
 o2.foo(); //bar2
 o3.foo(); //bar3
+
+/* Explicite binding rule 
+We can choose te execution context using call or apply
+and put as an argument object, that will be our 
+execution context
+*/
+
+function foo (){
+    console.log(this.bar);
+}
+
+var bar = "bar1";
+var obj = {bar: "bar2"};
+foo();
+foo.call(obj);
+
+/* Hard binding */
+
+TODO: bind example
