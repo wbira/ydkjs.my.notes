@@ -16,5 +16,5 @@ function foo() {
 /* 
 Issues with let
 - let is not hoisted
-
+- todo temprorary dead zone
 */
