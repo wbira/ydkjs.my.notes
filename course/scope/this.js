@@ -6,8 +6,17 @@
  In "building metaphor" where lex scope was about going througt all floors 
  of the building into top, this keyword is related to address of building,
  where it's placed in city
+ 
+ This keyword allows reusing functions againts multiple context, 
+without explicite passing context into that function. 
+It provides mechanism  for implicite passing object reference
 
- There are four rules about defining how this keyword is bound. Is is always objest, 
+Confusions
+1. this isn't refers to the function itself
+2. this refers to the function scope => we cannot use this for creating bridge between lexical scopes of functions 
+see examples in https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md
+
+There are four rules about defining how this keyword is bound. Is is always objest, 
  it is not a simple value type like number
  */
 
