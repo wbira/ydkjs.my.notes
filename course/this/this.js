@@ -17,12 +17,15 @@ Confusions
 see examples in https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md
 
 There are four rules about defining how this keyword is bound. Is is always objest, 
- it is not a simple value type like number
- */
+it is not a simple value type like number.
 
+Order of rules:
+1. new binding
+2. Explicite/hard binding
+3. Implicit binding (object owning the call)
+4. Default binding
 
-/*
-Binding rules - default binding - is a latest rule
+*****Default binding *******
 It's applied when called function is stand alone. It isn't attached 
 to any object. Its just a function. Its also applies to an IIFE patterns.
 
@@ -50,7 +53,7 @@ foo();
 
 var bar = "bar1";
 
-/* Implicit binding rule 
+/******* Implicit binding rule ************
 this rule is applied when function is a called as
 a property of anther object, and these object is
 an executuion context for our funstion
@@ -67,7 +70,7 @@ var o2 = { bar : "bar3", foo: foo }
 o2.foo(); //bar2
 o3.foo(); //bar3
 
-/* Explicite binding rule 
+/*****************  Explicite binding rule **********************
 We can choose te execution context using call or apply
 and put as an argument object, that will be our 
 execution context
@@ -82,6 +85,9 @@ var obj = {bar: "bar2"};
 foo();
 foo.call(obj);
 
-/* Hard binding */
+/* ******************Hard binding **************************
+Hard biding is a reusable pattern for connecting function with specific execution context.
+ES5 provided built-in utility for hard binding caleed bind : Function.prototype.bind.
 
-TODO: bind example
+In ES6 bounded function has a name property, that derives name from original function.
+*/
