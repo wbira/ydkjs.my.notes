@@ -90,4 +90,21 @@ Hard biding is a reusable pattern for connecting function with specific executio
 ES5 provided built-in utility for hard binding caleed bind : Function.prototype.bind.
 
 In ES6 bounded function has a name property, that derives name from original function.
+
+******************* exception ***********************
+
+1 Ignoring this: if you pass null or undefined as a parameter to call, apply or bind
+these tools will use default binding rule to examine this.
+
+There are additional two features:
+
+a.) apply with nyll call can spread out array (like ... operator from ES6)
+
+foo.apply( null, [2, 3] ); // a:2, b:3
+
+b.) bind utility can currying
+
+var bar = foo.bind( null, 2 );
+bar( 3 ); // a:2, b:3
+
 */
